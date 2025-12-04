@@ -50,34 +50,41 @@ body{
 }
 
 /* Header, Main, Footer */
-header, main, footer{
+header, main, footer {
     width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
+
 /* Header and Footer Only */
 header, footer{
-    max-width: 1248px;
     padding: 32px 16px;
     background-color: var(--wht);
 }
 
 /* Header Styles */
+/* Header Styles — Clean + Screenshot Accurate */
 header {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
     height: 600px;
+    padding: 48px 48px 32px 48px;
+
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+
     background-color: var(--wht);
     background-image: url("images/plants-on-table.jpg");
     background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 50% auto;   
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    padding-left: 8rem; 
+    background-position: right center;
+    background-size: 520px auto;
 }
+
+
 
 
 
@@ -205,7 +212,7 @@ main{
     padding: 32px 0;
 }
 
-/* Paragraphs in the Main (Direct Descendants Only) */
+
 main > p{
     color: var(--wht);
     margin-bottom: 96px;
@@ -518,5 +525,6 @@ input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
 /* Footer */
 footer{
     text-align: center;
+	
 }
 
