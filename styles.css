@@ -66,18 +66,17 @@ header, footer{
 header {
     height: 600px;
     background-color: var(--wht);
-
-    /* Use the exact image you provided */
     background-image: url("images/plants-on-table.jpg");
     background-repeat: no-repeat;
-    background-position: top right;   /* puts the plants in the top right corner */
-    background-size: 520px auto;      /* matches the screenshot proportions */
+    background-position: top right;
+    background-size: 50% auto;   
 
     display: flex;
-    flex-direction: column;           /* nav goes under the title */
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 10rem;
+
+    padding-left: 8rem; 
 }
 
 
