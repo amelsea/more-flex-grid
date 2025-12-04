@@ -50,42 +50,33 @@ body{
 }
 
 /* Header, Main, Footer */
-header, main, footer {
+header, main, footer{
     width: 100%;
-    max-width: 1280px;
     margin: 0 auto;
 }
 
-
 /* Header and Footer Only */
 header, footer{
+    max-width: 1200px;
     padding: 32px 16px;
     background-color: var(--wht);
 }
 
 /* Header Styles */
-/* Header Styles — Clean + Screenshot Accurate */
-header {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-
+header{
     height: 600px;
-    padding: 48px 48px 32px 48px;
-
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    align-items: center;
-
     background-color: var(--wht);
+
     background-image: url("images/plants-on-table.jpg");
     background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 520px auto;
+    background-position: top right;
+    background-size: 500px auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
 }
-
-
-
 
 
 /* For All Headings */
@@ -525,6 +516,5 @@ input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
 /* Footer */
 footer{
     text-align: center;
-	
 }
 
