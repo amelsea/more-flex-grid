@@ -1,8 +1,6 @@
 /*
     Name: Alaina Elsea
 */
-
-
 :root{
     /* Color Theme from Adobe Color */
     --lt-gray: #F2F2F0;
@@ -64,20 +62,28 @@ header, footer{
 }
 
 /* Header Styles */
-header{
+header {
+    position: relative; /* allows positioning child img */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10rem;
     height: 600px;
     background-color: var(--wht);
-    background-image: url("images/plants-on-table.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-
-    display: flex;
-    flex-direction: column;      /* NEW — stacks h1 and nav vertically */
-    align-items: flex-start;     /* NEW — aligns both to the left like screenshot */
-    justify-content: center;
-    padding-left: 10rem;         /* pushes content inward to match screenshot */
 }
+
+/* NEW — image block on right side */
+.header-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto;         /* keeps proportions */
+    object-fit: cover;   /* crops nicely like screenshot */
+    z-index: -1;         /* puts the image behind the nav + title */
+}
+
 
 
 /* For All Headings */
