@@ -63,20 +63,21 @@ header, footer{
 }
 
 /* Header Styles */
-header{
+header {
     height: 600px;
     background-color: var(--wht);
-
     background-image: url("images/plants-on-table.jpg");
     background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 500px auto;
+    background-position: top right;   
+    background-size: 520px auto;      
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column;           
     justify-content: center;
-    padding-left: 4rem;
+    align-items: flex-start;
+    padding-left: 10rem;
 }
+
 
 
 /* For All Headings */
