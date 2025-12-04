@@ -57,7 +57,7 @@ header, main, footer{
 
 /* Header and Footer Only */
 header, footer{
-    max-width: 1050px;
+    max-width: 1085px;
     padding: 32px 16px;
     background-color: var(--wht);
 }
