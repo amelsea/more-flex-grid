@@ -63,22 +63,20 @@ header, footer{
 }
 
 /* Header Styles */
-header {
+header{
     height: 600px;
     background-color: var(--wht);
+
     background-image: url("images/plants-on-table.jpg");
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 50% auto;   
+    background-size: 500px auto;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-
-    padding-left: 8rem; 
+    padding-left: 4rem;
 }
-
 
 
 /* For All Headings */
@@ -205,7 +203,7 @@ main{
     padding: 32px 0;
 }
 
-/* Paragraphs in the Main (Direct Descendants Only) */
+
 main > p{
     color: var(--wht);
     margin-bottom: 96px;
